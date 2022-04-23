@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.sometimeswefly.littlealchemy"
+        version     = "1.8.2"
+        versionCode = "10802" >
+
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="default" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="stay-in-webview" value="false" />
+    <!-- Fullscreen is only for android builds -->
+    <preference name="fullscreen" value="true" />
+    <preference name="android-installLocation" value="auto" />
+
+    <preference name="permissions" value="none" />
+
+    <!-- Only for tablet builds -->
+    <!-- <preference name="android-minSdkVersion" value="17" /> -->
+
+    <plugin name="cordova-plugin-inappbrowser" version="0.6.0" source="npm" />
+    <plugin name="cordova-plugin-x-socialsharing" source="npm" />
+    <plugin name="cordova-plugin-google-analytics" source="npm" />
+    <plugin name="cordova-plugin-x-toast" source="npm" />
+    <plugin name="cordova-plugin-globalization" source="npm" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <!-- <plugin name="cordova-plugin-googleplus" source="npm"> -->
+    <plugin spec="https://github.com/EddyVerbruggen/cordova-plugin-googleplus" source="git">
+        <param name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.313610222031-428kjepief7str6ij1m5i3190qcfojir" />
+    </plugin>
+
+    <access origin="*"/>
+    <access origin="market:*" launch-external="yes" />
+    <allow-navigation href="http://*/*" />
+	<allow-intent href="https://*/*" />
+
+    <icon src="icon.png" />
+
+    <icon src="assets/android/x42.png" platform="android" qualifier="mdpi" />
+    <icon src="assets/android/x72.png" platform="android" qualifier="hdpi" />
+    <icon src="assets/android/x96.png" platform="android" qualifier="xhdpi" />
+    <icon src="assets/android/x144.png" platform="android" qualifier="xxhdpi" />
+    <icon src="assets/android/x192.png" platform="android" qualifier="fr-xxhdpi" />
+
+    <icon src="assets/ios/x29.png" platform="ios" width="29" height="29" />
+    <icon src="assets/ios/x40.png" platform="ios" width="40" height="40" />
+    <icon src="assets/ios/x58.png" platform="ios" width="58" height="58" />
+    <icon src="assets/ios/x76.png" platform="ios" width="76" height="76" />
+    <icon src="assets/ios/x80.png" platform="ios" width="80" height="80" />
+    <icon src="assets/ios/x87.png" platform="ios" width="87" height="87" />
+    <icon src="assets/ios/x120.png" platform="ios" width="120" height="120" />
+    <icon src="assets/ios/x152.png" platform="ios" width="152" height="152" />
+    <icon src="assets/ios/x180.png" platform="ios" width="180" height="180" />
+
+    <splash src="assets/splash/640x960.png" platform="ios" width="640" height="960" />
+    <splash src="assets/splash/640x1136.png" platform="ios" width="640" height="1136" />
+    <splash src="assets/splash/768x1024.png" platform="ios" width="768" height="1024" />
+    <splash src="assets/splash/960x640.png" platform="ios" width="960" height="640" />
+    <splash src="assets/splash/1024x768.png" platform="ios" width="1024" height="768" />
+    <splash src="assets/splash/1136x640.png" platform="ios" width="1136" height="640" />
+    <splash src="assets/splash/1242x2208.png" platform="ios" width="1242" height="2208" />
+    <splash src="assets/splash/1536x2048.png" platform="ios" width="1536" height="2048" />
+    <splash src="assets/splash/2048x1536.png" platform="ios" width="2048" height="1536" />
+    <splash src="assets/splash/2208x1242.png" platform="ios" width="2208" height="1242" />
+
+    <name>Little Alchemy</name>
+
+    <description>
+        Explore what you can create by mixing simple elements.
+    </description>
+
+    <author href="https://recloak.com" email="contact@recloak.com">
+        Recloak
+    </author>
+
+</widget>
